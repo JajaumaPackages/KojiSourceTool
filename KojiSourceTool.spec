@@ -1,6 +1,6 @@
 Name:           KojiSourceTool
 Version:        1.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A source fetching tool for my build system
 
 License:        MIT
@@ -13,7 +13,7 @@ Requires:       rpmdevtools
 Requires:       rpm-build
 
 %description
-%{Summary}.
+%{summary}.
 
 
 %prep
@@ -37,5 +37,8 @@ install -m644 %{SOURCE1} %{buildroot}%{_datadir}/KojiSourceTool/Makefile
 
 
 %changelog
+* Sun Aug 06 2017 Jajauma's Packages <jajauma@yandex.ru> - 1.0.0-2
+- Fix 'Summary' interpolation
+
 * Sun Aug 06 2017 Jajauma's Packages <jajauma@yandex.ru> - 1.0.0-1
 - Initial release
