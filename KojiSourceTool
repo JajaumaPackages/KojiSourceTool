@@ -1,2 +1,7 @@
 #!/bin/bash
-make -f /usr/share/KojiSourceTool/Makefile sources
+
+if [[ -f Makefile ]]; then
+    make sources
+else
+    make -f /usr/share/KojiSourceTool/Makefile sources
+fi
